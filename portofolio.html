@@ -1,179 +1,366 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <title>Portofolio</title>
-
-    <!-- BUTTON KEMBALI
-    <style>
-      div a {
-          font-family: sans-serif;
-          font-size: 15px;
-          background: #dcd0d0;
-          color: white;
-          border: white 3px solid;
-          border-radius: 5px;
-          padding: 12px 20px;
-          margin-top: 10px;
-      }
-      div a {
-          text-decoration: none;
-      }
-      </style> -->
-    
-      <!-- CSS NAVBAR -->
-      <style>
-        ul.topnav {
-  list-style-type: none;
-  top: 0;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: rgb(131, 122, 122);
-  position: fixed;
-  width: 100%;
-  z-index: 1;
-}
-
-ul.topnav li {
-  float: left;
-}
-
-ul.topnav li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-ul.topnav li a:hover:not(.active) {
-  background-color: #e7dfdd;
-}
-
-ul.topnav li a.active {
-  background-color: #dcd0d0;
-}
-
-ul.topnav li.right {
-  float: right;
-}
-
-@media screen and (max-width: 600px) {
-  ul.topnav li.right,
-  ul.topnav li {
-    float: none;
-  }
-}
-      </style>
-
-    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portofolio Ayu Istikomah</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
   </head>
-
-  <body class="background">
-    <div>
-      <ul class="topnav" >
-        <li><a class="active" href="index.html">Biodata</a></li>
-        <li class="right"><a href="#kontak">Kontak</a></li>
-        <li class="right"><a href="#skill">Skill</a></li>
-        <li class="right"><a href="#pengalaman">Pengalaman</a></li>
-        <li class="right"><a href="#profil">Tentang Saya</a></li>
-        <li class="right"><a href="#pengunjung">Data Pengunjung</a></li>
-      </ul>
-    </div>
-    <!-- <div> <a href="biodata.html">Kembali ke Biodata</a> </div> -->
-    <section id="pengunjung"></section>
-    <h1 class ="data" style="font-family: verdana; text-align: center; color: #C0B283;">|Data Pengunjung|</h1>
-    <center>  
-    <h3 class ="form1">Isikan data diri anda</h3>
-            <form class ="form">
-              <p class="font-form">Nama :</p>
-              <input type="text" name="nama" placeholder="Masukkan nama anda" />
-              <p class="font-form">Domisili :</p>
-              <input type="radio" name="kelompok" id="banyuwangi" />
-              <label class="font-form" for="banyuwangi" >Banyuwangi</label>
-              <input type="radio" name="kelompok" id="luar" />
-              <label class="font-form" for="luar" >Luar Banyuwangi</label>
-              <div>
-                <input style="background-color: #d5d5d5 ;" type="submit" value="Submit" />
-                <input style="background-color: #d5d5d5;" type="reset" value="Reset" />
+  <body class="body">
+    <!-- NAVBAR -->
+    <nav id="navbar" class="navbar navbar-expand-lg shadow-sm sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold tex t-dark" href="#">
+          <img src="assets/image/logo2.png" alt="Logo" width="35" height="35" class="d-inline-block align-text-top rounded-circle" />
+          Ayu Istikomah
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <!-- about -->
+            <li class="nav-item">
+              <a class="nav-link active fw-bold text-dark" aria-current="page" href="#about">About</a>
+            </li>
+            <!-- edu -->
+            <li class="nav-item">
+              <a class="nav-link active fw-bold tex t-dark" aria-current="page" href="#education">Education</a>
+            </li>
+            <!-- pengalaman -->
+            <li class="nav-item">
+              <a class="nav-link active fw-bold text-dark" aria-current="page" href="#pengalaman">Experience</a>
+            </li>
+            <!-- skill -->
+            <li class="nav-item">
+              <a class="nav-link active fw-bold tex t-dark" aria-current="page" href="#skill">Skill</a>
+            </li>
+            <!-- contact -->
+            <li class="nav-item">
+              <a class="nav-link active fw-bold text-dark" aria-current="page" href="#contact">Contact</a>
+            </li>
+            <!-- gal -->
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle fw-bold text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Galery
+                  </a>
+                  <ul class="dropdown-menu opacity-75 border-dark">
+                    <li><a class="dropdown-item fw-bold" href="#figma">Figma</a></li>
+                    <li><a class="dropdown-item fw-bold" href="#coreldancanva">Corel Draw/Canva</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </ul>
+          <a class="btn bg-transparent fw-bold tex t-dark border-dark" href="index.html" role="button">Biodata</a>
+        </div>
+      </div>
+    </nav>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide justify-content-center mb-5" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div id="carousel" class="carousel-item active" data-bs-interval="10000">
+          <div id="hero1" class="container d-flex flex-column align-items-center justify-content-center" width="1100" height="600">
+            <img src="assets/image/hero.jpg" class="image-hero rounded-circle" alt="" />
+            <h1 class="title fw-bold">Portofolio</h1>
+            <p class="subtitle">~Selamat Datang~</p>
+            <i class="bi bi-arrow-down"></i>
+        </div>
+      </div>
+        <div id="carousel" class="carousel-item " data-bs-interval="2000">
+          <div id="hero1" class="container d-flex flex-column align-items-center justify-content-center" width="1100" height="600">
+            <img src="assets/image/figma.png" class="image-hero2" alt="" />
+            </div>
+        </div>
+        <div id="carousel" class="carousel-item">
+            <div id="hero1" class="container d-flex flex-column align-items-center justify-content-center" width="1100" height="600">
+              <img src="assets/image/panitia1.jpg" class="image-hero3" alt="" />
               </div>
-            </form>
-          </center>      
-      <hr />
-    <section id="profil"></section>
-    <h1 class ="sub-judul">|Tentang Saya|</h1>
-    <center>
-      <img class="foto-p" src="logo.png" alt="ayuuuuu"  />
-    </center>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- ABOUT -->
+    <div id="about" class="container mb-5">
+      <h2 class="text-center mb-3">|   About Me   |</h2>
+      <div class="row">
+        <div class="col-6">
+          <h3 class="text-about text-secondary lh-lg text-center text-decoration-underline">PERKENALKAN</h3>
+          <table class="table">
+            <tbody>
+              <tr>
+                <td>Nama</td>
+                <td>: Ayu Istikomah</td>
+              </tr>
+              <tr>
+                <td>Tempat/Tanggal Lahir</td>
+                <td>: Banyuwangi, 29 Desember 2001</td>
+              </tr>
+              <tr>
+                <td>Jenis Kelamin</td>
+                <td>: Perempuan</td>
+                <tr>
+                  <td>Berat/Tinggi Badan</td>
+                  <td>: 49kg / 161cm</td>
+                </tr>
+              </tr>
+              <tr>
+                <td>Agama</td>
+                <td>: Islam</td>
+              </tr>
+              <tr>
+                <td>Kewarganegaraan</td>
+                <td>: Warga Negara Indonesia</td>
+              </tr>
+              <tr>
+                <td>Alamat</td>
+                <td>: Jl. Mahakam Gang.III No. 34 Kec. Giri Kab. Banyuwangi</td>
+              </tr>
+              <tr>
+                <td>Status</td>
+                <td>: Mahasiswa</td>
+              </tr>
+              <tr>
+                <td>Nomor Telepon</td>
+                <td>: 087864096176</td>
+              </tr>
+              <tr>
+                <td>Alamat Email</td>
+                <td>: ayuisti29@gmail.com</td>
+              </tr>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-6">
+          <img id="foto-about" src="assets/image/aboutfoto.jpg" class="shadow rounded w-100" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- EDUCATION -->
+    <div id="education" class="container  mb-5">
+      <h2 class="text-center">|   Education   |</h2>
+      <div class="row">
+        <div class="col-3">
+          <div class="card bg-transparent text-dark" style="width: 18rem">
+            <div class="card-body ">
+              <h5 class="card-title">SDK Santa Maria</h5>
+              <h6 class="card-subtitle mb-2 text-muted">6 tahun</h6>
+              <p class="card-text">Terakreditasi “A”. Jl. J.A.Suprapto 84 Banyuwangi</p>
+              <a href="https://sdksantamariabwi.blogspot.com/2014/02/identitas-sekolah.html" class="card-link">Kunjungi</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card bg-transparent text-dark" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title">SMP Muhammadiyah 3</h5>
+              <h6 class="card-subtitle mb-2 text-muted">3 tahun</h6>
+              <p class="card-text">Terakreditasi “A”. JL. Jaksa Agung Suprapto No 60 Banyuwangi</p>
+              <a href="https://mugawangi.sch.id/" class="card-link">Kunjungi</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card bg-transparent text-dark" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title">SMKN 1 Banyuwangi</h5>
+              <h6 class="card-subtitle mb-2 text-muted">3 tahun</h6>
+              <p class="card-text">Terakreditasi “A”. Jl. Wijaya Kusuma No.46 Banyuwangi</p>
+              <a href="https://smkn1banyuwangi.sch.id/new/" class="card-link">Kunjungi</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card bg-transparent text-dark" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title">Poliwangi</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Aktif</h6>
+              <p class="card-text">Terakreditasi “A”. JL. Raya Jember KM 13 Laban Asem Banyuwangi</p>
+              <a href="https://www.poliwangi.ac.id/" class="card-link">Kunjungi</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- PENGALAMAN -->
+    <div id="pengalaman" class="container  mb-5">
+      <h2 class="text-center">|   My Experience   |</h2>
+      <div class="row">
+        <div class="col-3">
+          <div class="card text-dark" style="width: 18rem">
+            <div class="card-body ">
+              <h5 class="card-title">Dewan Ambalan</h5>
+              <h6 class="card-subtitle mb-2 text-muted">2018-2019</h6>
+              <p class="card-text">Salah satu organisasi SMKN 1 Banyuwangi</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card  text-dark" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title">UKM Kewirausahaan</h5>
+              <h6 class="card-subtitle mb-2 text-muted">2020-2021</h6>
+              <p class="card-text">Salah unit kegiatan mahasiswa Politeknik Negeri Banyuwangi</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card  text-dark" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title">YOT Banyuwangi</h5>
+              <h6 class="card-subtitle mb-2 text-muted">2021-sekarang</h6>
+              <p class="card-text">Organisasi kepemudaan di Banyuwangi</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card  text-dark" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title">Pelatihan JWD</h5>
+              <h6 class="card-subtitle mb-2 text-muted">2021</h6>
+              <p class="card-text">Pelatihan Network Administrator yang diadakan oleh dinas Kominfo</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- SKILL -->
+    <div id="skill" class="container mb-5">
+      <h2 class="text-center">|   My Skill   |</h2>
+      <div class="progress mb-3" style="height: 20px">
+        <div class="progress-bar bg-success" role="progressbar" aria-label="Success example" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">PHP</div>
+      </div>
+      <div class="progress mb-3" style="height: 20px">
+        <div class="progress-bar bg-info" role="progressbar" aria-label="Info example" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">JAVA SCRIPT</div>
+      </div>
+      <div class="progress mb-3" style="height: 20px">
+        <div class="progress-bar bg-warning" role="progressbar" aria-label="Warning example" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">FIGMA</div>
+      </div>
+      <div class="progress mb-3" style="height: 20px">
+        <div class="progress-bar bg-danger" role="progressbar" aria-label="Danger example" style="width: 90%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="90">COREL</div>
+      </div>
+    </div>
+     <!-- GALERY -->
+     <h2 class="text-center mb-3">|   My Galery  |</h2>
+     <div id="figma" class="container mb-5 ">
+      <h3 id="figma" class="text-about text-secondary lh-lg text-center">FIGMA</h3>
+        <h6 class="text-about text-dark lh-lg text-center">~Berikut merupakan hasil dari project figma yang pernah saya kerjakan~</h6>
+        <div class="row">
+          <div class="col-3">
+            <div class="card">
+              <img src="assets/image/figma.png" class="card-img-top" alt="..." />
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <img src="assets/image/figma1.PNG" class="card-img-top" alt="..." />
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <img src="assets/image/figma2.PNG" class="card-img-top" alt="..." />
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <img src="assets/image/figma3.PNG" class="card-img-top" alt="..." />
+            </div>
+          </div>
+          </div>
+        <h3 id="coreldancanva" class="text-about text-secondary lh-lg text-center">Corel dan Canva</h3>
+        <h6 class="text-about text-dark lh-lg text-center">~Berikut merupakan hasil dari project corel draw dan canva yang pernah saya kerjakan~</h6>
+        <div class="row">
+          <div class="col-3">
+            <div class="card">
+              <img src="assets/image/cc1.jpg" class="card-img-top" alt="..." />
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <img src="assets/image/cc2.png" class="card-img-top" alt="..." />
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <img src="assets/image/4.png" class="card-img-top" alt="..." />
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <img src="assets/image/17.png" class="card-img-top" alt="..." />
+            </div>
+          </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CONTACT -->
+    <div id="contact" class="container mb-5">
+      <h2 class="text-center mb-3">|   Contact Me   |</h2>
+      <div class="row">
+        <div class="col-5">
+          <img id="foto-contact" src="assets/image/logo2.png" class="shadow rounded w-100" alt="" />
+        </div>
+        <div class="col-6">
+          <form class="col-15 mx-auto ">
+            <div class="mb-4">
+              <label for="exampleFormControlInput1" class="form-label ">Name</label>
+              <input type="text" class="form-control border-secondary" id="exampleFormControlInput1" placeholder="name" />
+            </div>
+            <div class="mb-4">
+              <label for="exampleFormControlInput1" class="form-label">Email address</label>
+              <input type="email" class="form-control border-secondary" id="exampleFormControlInput1" placeholder="name@example.com" />
+            </div>
+            <div class="mb-4">
+              <label for="exampleFormControlTextarea1" class="form-label">Question</label>
+              <textarea class="form-control border-secondary" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="button" class="btn btn-secondary w-100 ">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <svg class="bi" width="10" height="10"><use xlink:href="#bootstrap" /></svg>
+          </a>
+          <span class="mb-1 mb-md-0 text-muted">&copy; 2022 Company, Inc</span>
+        </div>
 
-    <p class ="isi" >
-      Perkenalkan nama saya Ayu Istikomah, saat ini saya berdomisili di Banyuwangi Kota. dengan jurusan Teknik Informatika prodi Teknologi Rekayasa Perangkat Lunak. Alasan saya memilih Teknik Informatika di Politeknik Negeri Banyuwangi
-      yaitu saya ingin melatih kepekaan diri saya terhadap perkembangan teknologi yang lajunya semakin pesat. Saya memiiki beberapa pengamalaman berorganisasi dan pelatihan yang saya ikuti selama saya berkuliah. Saat ini juga saya masih
-      mengikuti Program Studi Independent Bersama SEAL di Kampus Merdeka dalam bidang UI/UX.
-    </p>
-    <hr />
-    
-    <section id="pengalaman"></section>
-      <h1 class ="sub-judul">|Pengalaman|</h1>
-      <table class="pengalaman" border="1">
-        <tr style="background-color: #6D7993 ;">
-          <th>No</th>
-          <th>Pengalaman</th>
-          <th>Tahun</th>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>Pelatihan Kerja Lapangan STIKES Banyuwangi</td>
-          <td>2019</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Dewan Ambalan SMKN 1 Banyuwangi</td>
-          <td>2018-2019</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>UKM Kewirausahaan Politeknik Negri Banyuwangi</td>
-          <td>2021-2022</td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>Anggota Komunitas YOT Banyuwangi</td>
-          <td>2022</td>
-        </tr>
-        <tr>
-          <td>5</td>
-          <td>Pelatihan Junior Network Administrator Kominfo</td>
-          <td>2021</td>
-        </tr>
-      </table>
-      <hr />
-
-    <section id="skill"></section>
-    <h1 class ="sub-judul">|Skill|</h1>
-      <table class="skill" border="1">
-        <tr>
-          <th class="tabel-2">Bidang Non IT</th>
-        </tr>
-        <tr>
-          <td class="tabel-2">
-            <ul>
-              <li>Desain</li>
-              <li>Editor</li>
-              <li>Menggambar</li>
-            </ul>
-          </td>
-        </tr>
-      </table>
-    <hr />
-    <section id="kontak"></section>
-    <h1 class ="sub-judul">|Kontak|</h1>
-   <center>
-    <a href="https://www.instagram.com/aistkmh/">Instagram || <a href="https://github.com/ayuisti29">Github</a> || <a href="https://codepen.io/AyuIstikomah">Codepen</a>
-  </center>
-</body>
+        <ul class="nav col-md-2 justify-content-end list-unstyled d-flex">
+          <li class="ms-3">
+            <a class="text-muted" href="https://github.com/ayuisti29"><i class="bi bi-github"></i></a>
+          </li>
+          <li class="ms-3">
+            <a class="text-muted" href="https://www.instagram.com/aistkmh/"><i class="bi bi-instagram"></i></a>
+          </li>
+          <li class="ms-3">
+            <a class="text-muted" href="#"><i class="bi bi-twitter"></i></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
 </html>

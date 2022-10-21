@@ -125,3 +125,59 @@
     width: 20%;
   }
 }
+
+/* CSS INDEX */
+.body {
+  background: #dcd0d0;
+}
+#navbar {
+  background-color: #96858f;
+}
+.image-hero {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+.image-hero2 {
+  width: 650px;
+  height: 670px;
+  object-fit: cover;
+}
+.image-hero3 {
+  width: 800px;
+  height: 560px;
+  object-fit: cover;
+}
+.title {
+  font-family: "Raleway", sans-serif;
+}
+.subtitle {
+  letter-spacing: 10px;
+}
+#hero {
+  height: 95vh;
+}
+#hero1 {
+  height: 90vh;
+}
+#foto-about {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+}
+.text-about {
+  text-indent: 50px;
+  text-align: justify;
+}
+.card-img-top {
+  height: 400px;
+  object-fit: cover;
+}
+#foto-contact {
+  width: 250px;
+  height: 450px;
+  object-fit: cover;
+}
+.dropdown-menu {
+  background-color: #96858f;
+}
